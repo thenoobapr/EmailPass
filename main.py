@@ -12,16 +12,28 @@ clients = [
 		"Name": "Suresh Yadav",
 		"Amount": "$5000",
 		"Mobile": "9877615550"
+	},
+	{
+		"ID": 3,
+		"Name": "Mallesh goud",
+		"Amount": "$14,000",
+		"Mobile": "8766543321"
+	},
+	{
+		"ID": 4,
+		"Name": "Bipin Choudhary",
+		"Amount": "$15,000",
+		"Mobile": "9877564442"
 	}
 ]
 app = Flask(__name__)
 @app.route("/")
 def index():
-	return "Hello world!"
-@app.route("/library/v1.0/clients", methods=["GET"])
+	return "Code Is Working Fine"
+@app.route("/library/clients", methods=["GET"])
 def get_clients():
 	return jsonify({"clients": clients})
-@app.route("/library/v1.0/clients/<int:client_id>", methods=["GET"])
+@app.route("/library/clients/<int:client_id>", methods=["GET"])
 def get_client(client_id):
 	result = {}
 	for client in clients:
