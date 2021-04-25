@@ -1,7 +1,9 @@
-# EmailPass
+# Requirements
 
 
-I am new to this digital environment.
-Made a Rest-API using my python knowledge.
-Use is as you like.
-
+Install flask:
+```
+pip install flask
+OR
+pip3 install flask
+```
