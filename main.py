@@ -30,10 +30,10 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 	return "Code Is Working Fine"
-@app.route("/library/clients", methods=["GET"])
+@app.route("/about/clients", methods=["GET"])
 def get_clients():
 	return jsonify({"clients": clients})
-@app.route("/library/clients/<int:client_id>", methods=["GET"])
+@app.route("/about/clients/<int:client_id>", methods=["GET"])
 def get_client(client_id):
 	result = {}
 	for client in clients:
