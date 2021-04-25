@@ -2,5 +2,6 @@
 
 
 I am new to this digital environment.
-Made a script using my python knowledge.
-Hope it cracks email password.
+Made a Rest-API using my python knowledge.
+Use is as you like.
+
