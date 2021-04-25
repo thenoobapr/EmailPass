@@ -1,7 +1,7 @@
 # EmailPass
 
 
-I am new to this digital environment.\n
-Made a Rest-API using my python knowledge.\n
+I am new to this digital environment.
+Made a Rest-API using my python knowledge.
 Use is as you like.
 
